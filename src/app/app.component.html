@@ -1,0 +1,5 @@
+<button (click)="onClick()">Display Details</button>
+<p *ngIf="showSecret">Secret Password = tuna</p>
+<ul >
+  <li [ngClass]="{'white' : i > 3}" [ngStyle]="i>3 && {'background-color' : 'blue'} " *ngFor="let click of clicks; let i = index">{{click}}</li>
+</ul>
